@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale</title>
+
+    <!-- work sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- daisyUi cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#E527B2",
+              black: "#111111",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- custom css -->
+    <style>
+      *,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .work-sans-font {
+        font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="work-sans-font">
+    <!-- header start -->
+    <header class="bg-[#F9F6E2]">
+      <section
+        id="banner-section"
+        class="flex gap-7 justify-center items-center px-[150px] py-[80px]"
+      >
+        <div id="banner-content" class="text-center">
+          <h5 class="font-medium text-[32px] text-black mb-11">
+            ---SALE FEVER---
+          </h5>
+          <h3 class="font-bold text-[58px] text-black mb-12">
+            Purchase TK 200 or above & get
+            <span class="text-primary">20% off</span>
+          </h3>
+          <div class="promo text-2xl flex gap-4 justify-center items-center">
+            <p class="font-medium text-black">Use Promo Code</p>
+            <button class="btn btn-md bg-primary text-white font-semibold">
+              SELL200
+            </button>
+          </div>
+        </div>
+        <div id="banner-img w-[650px] h-[650px]">
+          <img class="w-full h-full" src="./images/banner.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <!-- main start -->
+    <main class="bg-[rgba(17,17,17,0.05)]">
+      <div class="flex flex-col lg:flex-row gap-6 px-[150px] py-[50px]">
+        <!-- products section -->
+        <section class="flex-1">
+          <!-- kitchenware -->
+          <div class="py-[25px]">
+            <h4 class="text-[40px] font-semibold text-black mb-8">
+              Kitchenware
+            </h4>
+            <div class="cards grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- card11 -->
+              <div class="card w-[270px] border bg-base-100 shadow-xl p-5">
+                <figure class="py-7 px-7 rounded-lg bg-[rgba(17,17,17,0.05)]">
+                  <img
+                    src="./images/prod1.png"
+                    alt="prod1"
+                    class="rounded-xl h-[135px]"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="starts">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                  </div>
+                  <h2 class="card-title font-semibold text-xl text-black">
+                    K. Accessories
+                  </h2>
+                  <p class="text-xl text-[rgba(17,17,17,0.5)]">
+                    <span>39.00</span> TK
+                  </p>
+                </div>
+              </div>
+              <!-- card12 -->
+              <div class="card w-[270px] border bg-base-100 shadow-xl p-5">
+                <figure class="py-7 px-7 rounded-lg bg-[rgba(17,17,17,0.05)]">
+                  <img
+                    src="./images/prod2.png"
+                    alt="prod2"
+                    class="rounded-xl h-[135px]"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="starts">
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                  </div>
+                  <h2 class="card-title font-semibold text-xl text-black">
+                    K. Accessories
+                  </h2>
+                  <p class="text-xl text-[rgba(17,17,17,0.5)]">
+                    <span>25.00</span> TK
+                  </p>
+                </div>
+              </div>
+              <!-- card13 -->
+              <div class="card w-[270px] border bg-base-100 shadow-xl p-5">
+                <figure class="py-7 px-7 rounded-lg bg-[rgba(17,17,17,0.05)]">
+                  <img
+                    src="./images/prod3.png"
+                    alt="prod1"
+                    class="rounded-xl h-[135px]"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="starts">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                  </div>
+                  <h2 class="card-title font-semibold text-xl text-black">
+                    Home Cooker
+                  </h2>
+                  <p class="text-xl text-[rgba(17,17,17,0.5)]">
+                    <span>49.00</span> TK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sportswear -->
+          <div class="py-[25px]">
+            <h4 class="text-[40px] font-semibold text-black mb-8">
+              Sportswear
+            </h4>
+            <div class="cards grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- card21 -->
+              <div class="card w-[270px] border bg-base-100 shadow-xl p-5">
+                <figure class="py-7 px-7 rounded-lg bg-[rgba(17,17,17,0.05)]">
+                  <img
+                    src="./images/prod4.png"
+                    alt="prod4"
+                    class="rounded-xl h-[135px]"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="starts">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                  </div>
+                  <h2 class="card-title font-semibold text-xl text-black">
+                    Sports Back Cap
+                  </h2>
+                  <p class="text-xl text-[rgba(17,17,17,0.5)]">
+                    <span>49.00</span> TK
+                  </p>
+                </div>
+              </div>
+              <!-- card22 -->
+              <div class="card w-[270px] border bg-base-100 shadow-xl p-5">
+                <figure class="py-7 px-7 rounded-lg bg-[rgba(17,17,17,0.05)]">
+                  <img
+                    src="./images/prod5.png"
+                    alt="prod5 "
+                    class="rounded-xl h-[135px]"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="starts">
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                  </div>
+                  <h2 class="card-title font-semibold text-xl text-black">
+                    Full Jersey Set
+                  </h2>
+                  <p class="text-xl text-[rgba(17,17,17,0.5)]">
+                    <span>69.00</span> TK
+                  </p>
+                </div>
+              </div>
+              <!-- card23 -->
+              <div class="card w-[270px] border bg-base-100 shadow-xl p-5">
+                <figure class="py-7 px-7 rounded-lg bg-[rgba(17,17,17,0.05)]">
+                  <img
+                    src="./images/prod6.png"
+                    alt="prod6      "
+                    class="rounded-xl h-[135px]"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="starts">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                  </div>
+                  <h2 class="card-title font-semibold text-xl text-black">
+                    Sports cates
+                  </h2>
+                  <p class="text-xl text-[rgba(17,17,17,0.5)]">
+                    <span>159.00</span> TK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Furniture -->
+          <div class="py-[25px]">
+            <h4 class="text-[40px] font-semibold text-black mb-8">Furniture</h4>
+            <div class="cards grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- card31 -->
+              <div class="card w-[270px] border bg-base-100 shadow-xl p-5">
+                <figure class="py-7 px-7 rounded-lg bg-[rgba(17,17,17,0.05)]">
+                  <img
+                    src="./images/prod7.png"
+                    alt="prod7"
+                    class="rounded-xl h-[135px]"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="starts">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    <i class="fa-regular fa-star text-[#ffc107]"></i>
+                  </div>
+                  <h2 class="card-title font-semibold text-xl text-black">
+                    Single Relax Chair
+                  </h2>
+                  <p class="text-xl text-[rgba(17,17,17,0.5)]">
+                    <span>185.00</span> TK
+                  </p>
+                </div>
+              </div>
+              <!-- card32 -->
+              <div class="card w-[270px] border bg-base-100 shadow-xl p-5">
+                <figure class="py-7 px-7 rounded-lg bg-[rgba(17,17,17,0.05)]">
+                  <img
+                    src="./images/prod8.png"
+                    alt="prod8"
+                    class="rounded-xl h-[135px]"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="starts">
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                  </div>
+                  <h2 class="card-title font-semibold text-xl text-black">
+                    Children play
+                  </h2>
+                  <p class="text-xl text-[rgba(17,17,17,0.5)]">
+                    <span>299.00</span> TK
+                  </p>
+                </div>
+              </div>
+              <!-- card33 -->
+              <div class="card w-[270px] border bg-base-100 shadow-xl p-5">
+                <figure class="py-7 px-7 rounded-lg bg-[rgba(17,17,17,0.05)]">
+                  <img
+                    src="./images/prod9.png"
+                    alt="prod9 "
+                    class="rounded-xl h-[135px]"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="starts">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                  </div>
+                  <h2 class="card-title font-semibold text-xl text-black">
+                    Flexible Sofa
+                  </h2>
+                  <p class="text-xl text-[rgba(17,17,17,0.5)]">
+                    <span>339.00</span> TK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cart section -->
+        <section class="w-[350px] flex flex-col gap-6 mt-[118px] items-center">
+          <!-- code -->
+          <div id="couponDiv" class="bg-white p-6 rounded-lg">
+            <h4 class="mb-4">Have coupon?</h4>
+            <input
+              class="border border-r-0 rounded-lg rounded-r-none box-border p-3"
+              type="text"
+              name=""
+              id="coupon"
+              placeholder="Coupon code"
+            />
+            <button
+              id="apply-btn"
+              class="text-white rounded-l-none -ml-2 p-3 rounded-r-lg font-semibold text-lg bg-primary hover:before:disabled:bg-slate-200 disabled:opacity-70"
+              disabled
+            >
+              Apply
+            </button>
+          </div>
+          <!-- make purchase -->
+          <div
+            id="purchaseDiv"
+            class="bg-white p-6 font-medium text-2xl text-black rounded-lg"
+          >
+            <div id="item-container" class=""></div>
+            <!-- horizontal line -->
+            <div
+              class="w-[280px] h-0 border border-[rgba(17,17,17,0.15)] my-3"
+            ></div>
+            <div id="price-div">
+              <p>
+                Total price:
+                <span class="text-[rgba(17,17,17,0.4)]"
+                  ><span id="total-price">0.00</span> TK</span
+                >
+              </p>
+              <p>
+                Discount:
+                <span class="text-[rgba(17,17,17,0.4)]"
+                  ><span id="discount">0.00</span> TK</span
+                >
+              </p>
+              <p>
+                Total:
+                <span class="text-[rgba(17,17,17,0.4)]"
+                  ><span id="total">0.00</span> TK</span
+                >
+              </p>
+            </div>
+            <!-- horizontal line -->
+            <div
+              class="w-[280px] h-0 border border-[rgba(17,17,17,0.15)] my-3"
+            ></div>
+          </div>
+          <!-- make purchase button -->
+          <button
+            id="make-purchase-btn"
+            onclick="purchaseButton.showModal()"
+            class="w-3/4 bg-primary text-white -mt-10 text-xl font-semibold p-2 rounded-lg disabled:opacity-70 "
+            disabled
+          >
+            Make Purchase
+          </button>
+
+          <!-- Modal -->
+          <!-- Open the modal using ID.showModal() method -->
+          <!-- <button class="btn" onclick="my_modal_5.showModal()">
+            open modal
+          </button> -->
+          <dialog
+            id="purchaseButton"
+            class="modal modal-bottom sm:modal-middle"
+          >
+            <div class="modal-box flex flex-col justify-center items-center">
+              <img src="./images/congo.png" alt="" />
+              <h3 class="font-bold text-lg">Congratulations</h3>
+              <p class="py-4">Your Purchase the product</p>
+              <div>
+                <form>
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button id="modal-btn" class="btn bg-primary text-white px-8">
+                    Go Home
+                  </button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </section>
+      </div>
+    </main>
+
+    <!-- js -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/common.js"></script>
+  </body>
+</html>
